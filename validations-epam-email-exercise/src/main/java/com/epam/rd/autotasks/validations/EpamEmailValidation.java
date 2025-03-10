@@ -9,6 +9,7 @@ public class EpamEmailValidation {
         if (email == null || email.isEmpty() || email.length() == 1) {
             return false;
         }
+        
         String regex = "^[a-zA-Z]+_[a-zA-Z]+\\d*@epam\\.com$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(email);
